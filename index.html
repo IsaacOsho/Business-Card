@@ -10,41 +10,42 @@
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head> 
   <body>
-    <div class="fullscreen-container">
-      <model-viewer src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/logoco.glb?v=1724835997057"
-                    ios-src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/logoco%20(1).usdz?v=1724836441846"
-                    poster="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/IO%20LOGOArtboard%201%20w.png?v=1724836494021"
-                    alt="IOstudios Business Card"
-                    shadow-intensity="1"
-                    camera-controls
-                    auto-rotate ar>
-      </model-viewer>
-    </div>
-
-    <div class="example-2">
-      <ul>
-        <li class="icon-content">
-          <a href="https://www.linkedin.com/in/IsaacOsho" target="_blank" data-social="linkedin">
-            <div class="filled"></div>
-            <svg> <!-- LinkedIn SVG icon --> </svg>
-          </a>
-          <span class="tooltip">LinkedIn</span>
-        </li>
-        <li class="icon-content">
-          <a href="http://www.instagram.com/caasiohso" target="_blank" data-social="instagram">
-            <div class="filled"></div>
-            <svg> <!-- Instagram SVG icon --> </svg>
-          </a>
-          <span class="tooltip">Instagram</span>
-        </li>
-        <li class="icon-content">
-          <a href="https://github.com/IsaacOsho" target="_blank" data-social="github">
-            <div class="filled"></div>
-            <svg> <!-- GitHub SVG icon --> </svg>
-          </a>
-          <span class="tooltip">GitHub</span>
-        </li>
-      </ul>
+    <div class="container">
+      <div class="model-container">
+        <model-viewer src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/logoco.glb?v=1724835997057"
+                      ios-src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/logoco%20(1).usdz?v=1724836441846"
+                      poster="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/IO%20LOGOArtboard%201%20w.png?v=1724836494021"
+                      alt="IOstudios Business Card"
+                      shadow-intensity="1"
+                      camera-controls
+                      auto-rotate ar>
+        </model-viewer>
+      </div>
+      <div class="social-icons example-2">
+        <ul>
+          <li class="icon-content">
+            <a href="https://www.linkedin.com/in/IsaacOsho" target="_blank" data-social="linkedin">
+              <div class="filled"></div>
+              <svg> <!-- LinkedIn SVG icon --> </svg>
+            </a>
+            <span class="tooltip">LinkedIn</span>
+          </li>
+          <li class="icon-content">
+            <a href="http://www.instagram.com/caasiohso" target="_blank" data-social="instagram">
+              <div class="filled"></div>
+              <svg> <!-- Instagram SVG icon --> </svg>
+            </a>
+            <span class="tooltip">Instagram</span>
+          </li>
+          <li class="icon-content">
+            <a href="https://github.com/IsaacOsho" target="_blank" data-social="github">
+              <div class="filled"></div>
+              <svg> <!-- GitHub SVG icon --> </svg>
+            </a>
+            <span class="tooltip">GitHub</span>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!-- Loads <model-viewer> for modern browsers: -->
