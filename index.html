@@ -1,77 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>&lt;model-viewer&gt; example</title>
+    <title>IOstudios Business Card</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="demo-styles.css">
-
-    <!-- 💁 OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    
+    <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
   </head> 
-<body>
-  <div id="loader-container">
-    <div class="loader"></div>
-  </div>
+  <body>
+    <div class="fullscreen-container">
+      <model-viewer src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/logoco.glb?v=1724835997057"
+                    ios-src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/logoco%20(1).usdz?v=1724836441846"
+                    poster="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/IO%20LOGOArtboard%201%20w.png?v=1724836494021"
+                    alt="IOstudios Business Card"
+                    shadow-intensity="1"
+                    camera-controls
+                    auto-rotate ar>
+      </model-viewer>
+    </div>
 
-  <div id="card" style="display:none;">
-    <model-viewer src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/.k%2Cjhmng.glb?v=1724839394285"
-                  ios-src="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/k%2Cjhmng%20(1).usdz?v=1724839853187"
-                  poster="https://cdn.glitch.global/75a70984-3835-4273-8eac-d9cdf0776a9c/IO%20LOGOArtboard%201%20w.png?v=1724836494021"
-                  alt="IOstudios Business"
-                  shadow-intensity="1"
-                  camera-controls
-                  auto-rotate 
-                  ar>
-    </model-viewer>
-    
     <div class="example-2">
       <ul>
         <li class="icon-content">
           <a href="https://www.linkedin.com/in/IsaacOsho" target="_blank" data-social="linkedin">
-            <svg> <!-- LinkedIn SVG icon here --> </svg>
             <div class="filled"></div>
+            <svg> <!-- LinkedIn SVG icon --> </svg>
           </a>
-          <div class="tooltip">LinkedIn</div>
+          <span class="tooltip">LinkedIn</span>
         </li>
         <li class="icon-content">
           <a href="http://www.instagram.com/caasiohso" target="_blank" data-social="instagram">
-            <svg> <!-- Instagram SVG icon here --> </svg>
             <div class="filled"></div>
+            <svg> <!-- Instagram SVG icon --> </svg>
           </a>
-          <div class="tooltip">Instagram</div>
+          <span class="tooltip">Instagram</span>
         </li>
         <li class="icon-content">
           <a href="https://github.com/IsaacOsho" target="_blank" data-social="github">
-            <svg> <!-- GitHub SVG icon here --> </svg>
             <div class="filled"></div>
+            <svg> <!-- GitHub SVG icon --> </svg>
           </a>
-          <div class="tooltip">GitHub</div>
+          <span class="tooltip">GitHub</span>
         </li>
       </ul>
     </div>
-  </div>
-  
-  <!-- 💁 Include both scripts below to support all browsers! -->
-  <!-- Loads <model-viewer> for modern browsers: -->
-  <script type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-  </script>
 
-  <!-- JavaScript to handle the loading animation and display the model -->
-  <script>
-    window.addEventListener('load', function() {
-      const loaderContainer = document.getElementById('loader-container');
-      const modelViewer = document.getElementById('card');
-      
-      // Hide loader after some time and show model viewer
-      setTimeout(() => {
-        loaderContainer.style.display = 'none';
-        modelViewer.style.display = 'block';
-      }, 3000); // Adjust the timeout as needed
-    });
-  </script>
-</body>
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </body>
 </html>
